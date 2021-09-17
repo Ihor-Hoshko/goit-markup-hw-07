@@ -59,11 +59,9 @@ img {
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  width: 200px;
   border-radius: 4px;
   border: 1px solid #000000;
   margin: 0 auto;
-  padding: 10px 32px 10px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -72,8 +70,7 @@ img {
   background-color: var(--button-hover-color);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--button-hover-text-color);
   background-color: #188ce8;
 }
@@ -349,34 +346,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.filter-list .button {
-  display: block;
-  color: var(--primary-text-color);
-  background-color: var(--button-background-color);
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  width: 200px;
-  border-radius: 4px;
-  border: 1px solid #000000;
-  margin: 0 auto;
-  padding: 10px 32px 10px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filter-list .button.current {
-  color: var(--button-hover-text-color);
-  background-color: var(--button-hover-color);
-}
-
-.filter-list .button:hover,
-.filter-list .button:focus {
-  color: var(--button-hover-text-color);
-  background-color: #188ce8;
-}
-
 .project-list {
   list-style: none;
   display: flex;
@@ -630,9 +599,6 @@ img {
   display: flex;
   justify-content: center;
   padding-left: 0px;
-  /* margin-bottom: 30px;
-    margin-right: 32px;
-    margin-left: 32px; */
 }
 
 .social-item {
@@ -660,8 +626,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-link:hover, .social-link:focus {
   background-color: var(--button-hover-color);
 }
 
@@ -703,15 +668,14 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.client-link:hover, .client-link:focus {
+  border-color: var(--button-hover-color);
+}
+
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   border-color: var(--button-hover-color);
   fill: var(--button-hover-color);
-}
-
-.client-link:hover,
-.client-link:focus {
-  border-color: var(--button-hover-color);
 }
 
 .client-icon {
@@ -719,9 +683,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .client-link .client-icon {
-    transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
-  } */
 .client-icon:focus,
 .client-icon:hover {
   fill: var(--button-hover-color);
