@@ -27,3 +27,28 @@
     margin-top: 0px;
     min-width: 696px;
   }
+  .hero-list .button {
+    display: block;
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    padding: 10px 32px 10px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .hero-list .button.current {
+    color: var(--button-hover-text-color);
+    background-color: var(--button-hover-color);
+  }
+  .hero-list .button:hover,
+  .hero-list .button:focus {
+    color: var(--button-hover-text-color);
+    background-color: #188ce8;
+  }
