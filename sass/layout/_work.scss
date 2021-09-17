@@ -1,0 +1,47 @@
+.work-list {
+    padding-top: 0px;
+    padding-bottom: 94px;
+  }
+  .work-list-img {
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    margin-top: 50px;
+    z-index: 0;
+  }
+  .work-list-img .item {
+    width: 370px;
+    position: relative;
+  }
+  .work-overlay {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 00.03em;
+    color: var(--button-hover-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    z-index: 0;
+  }
+  .work-list-img .item + .item {
+    margin-left: 30px;
+  }
+  .work-list-title {
+    letter-spacing: 0.03em;
+    text-align: center;
+    line-height: 1.17;
+    font-weight: 700;
+    font-size: 36px;
+  }
+  .work-list-title .team-list-title {
+    color: var(--primary-text-color);
+  
+    letter-spacing: 0.03em;
+  }
