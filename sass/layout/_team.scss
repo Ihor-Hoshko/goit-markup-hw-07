@@ -3,7 +3,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .team-list-title {
+  .all-team__title {
     text-align: center;
     line-height: 1.17;
     font-weight: 700;
@@ -11,19 +11,19 @@
     color: var(--primary-text-color);
     letter-spacing: 0.03em;
   }
-  .team-list-catalog {
+  .team-list {
     list-style: none;
     display: flex;
     padding-left: 0px;
     margin-top: 50px;
     justify-content: center;
   }
-  .team-list-catalog {
-    .item + .item {
-    margin-left: 30px;}
-  }
   
-  .team-list-name {
+    .team-list__item + .team-list__item {
+    margin-left: 30px;}
+  
+  
+  .team-list__name {
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -31,7 +31,7 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
-  .team-list-description {
+  .team-list__description {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -41,7 +41,7 @@
     text-align: center;
     margin-bottom: 16px;
   }
-  .team-list-content {
+  .team-list__content {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 1px;
     padding: 30px 32px 30px 32px;

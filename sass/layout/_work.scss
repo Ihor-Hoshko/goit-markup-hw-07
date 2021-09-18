@@ -1,20 +1,20 @@
-.work-list {
+.work {
     padding-top: 0px;
     padding-bottom: 94px;
   }
-  .work-list-img {
+  .work-list {
     list-style: none;
     display: flex;
     padding-left: 0px;
     margin-top: 50px;
     z-index: 0;
   }
-  .work-list-img {
-  .item {
+  .work-list {
+  .work-list__item {
     width: 370px;
     position: relative;}
   }
-  .work-overlay {
+  .work-list__overlay {
     position: absolute;
     bottom: 0;
     display: flex;
@@ -31,17 +31,16 @@
     background-color: rgba(47, 48, 58, 0.8);
     z-index: 0;
   }
-  .work-list-img {
-     .item + .item {
+  .work-list {
+     .work-list__item + .work-list__item {
     margin-left: 30px;}
   }
-  .work-list-title {
+  .work-title {
     letter-spacing: 0.03em;
     text-align: center;
     line-height: 1.17;
     font-weight: 700;
     font-size: 36px;
     color: var(--primary-text-color);
-    letter-spacing: 0.03em;
   }
  

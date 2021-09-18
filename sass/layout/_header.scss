@@ -18,11 +18,11 @@
     list-style: none;
     padding-left: 0px;
   }
-  .nav-list .item + .item {
+ .nav-list__item + .nav-list__item {
     margin-left: 50px;
   }
   
-  .nav-list .nav-list-link {
+  .nav-list__link {
     position: relative;
     display: block;
     color: var(--primary-text-color);
@@ -39,7 +39,7 @@
     }
   }
   
-  .nav-list .nav-list-link.current {
+  .nav-list__link--current {
     display: block;
     color: var(--button-hover-color);
     padding-top: 32px;

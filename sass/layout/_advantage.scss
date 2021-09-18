@@ -4,29 +4,29 @@
     padding-left: 0px;
     margin: 0 auto;
   }
-  .advantage-list  {
-    .item {
+  
+   .advantage-list__item {
     width: 270px;}
-  }
-  .advantage-list {
-  .item + .item {
+  
+  
+  .advantage-list__item + .advantage-list__item {
     margin-left: 30px;}
-  }
-  .advantage-list {
-  .advantage-list-title {
+  
+  
+  .advantage-list__title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.1;}
-  }
-  .advantage-list {
-    .advantage-list-text {
+  
+  
+    .advantage-list__text {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     margin-top: 10px;}
-  }
+  
   .icon-container {
     display: flex;
     height: 120px;
@@ -36,19 +36,4 @@
     justify-content: center;
     align-items: center;
   }
-  .icon-antenna-1 {
-    width: 70px;
-    height: 70px;
-  }
-  .icon-clock-1 {
-    width: 70px;
-    height: 70px;
-  }
-  .icon-diagram-1 {
-    width: 70px;
-    height: 70px;
-  }
-  .icon-astronaut-1 {
-    width: 70px;
-    height: 70px;
-  }
+ 
