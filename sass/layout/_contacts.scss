@@ -7,7 +7,7 @@
     align-items: center;
   }
   
-  .contacts-list .item + .item {
+  .contacts-list__item + .contacts-list__item {
     margin-left: 50px;
   }
   .contacts-list .contact {

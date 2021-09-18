@@ -206,64 +206,12 @@ img {
   fill: var(--button-hover-color);
 }
 
-.contact-form {
-  position: relative;
-  width: 570px;
-  min-height: 86px;
-  margin: 0 auto;
-}
-
-.input-form {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 358px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: #2f303a;
-  margin-right: 12px;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-  outline: none;
-}
-
-.input-button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-  background-color: var(--button-hover-color);
-  color: var(--button-hover-text-color);
-  border-radius: 4px;
-}
-
-.icon-send {
-  display: block;
-  margin-left: 10px;
-  fill: var(--button-hover-text-color);
-}
-
-.text-for-input {
-  color: var(--button-hover-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1;
-}
-
 .modal-form-name {
   margin-bottom: 10px;
   position: relative;
 }
 
-.label-modal-span {
+.modal-form__span {
   position: relative;
   outline: none;
 }
@@ -280,8 +228,8 @@ img {
   fill: var(--button-hover-color);
 }
 
-.label-modal-span:hover .icon-modal,
-.label-modal-span:focus .icon-modal {
+.modal-form__span:hover .icon-modal,
+.modal-form__span:focus .icon-modal {
   fill: var(--button-hover-color);
 }
 
@@ -322,8 +270,8 @@ img {
   border: 1px solid #2196f3;
 }
 
-.label-modal-span:hover .input-modal,
-.label-modal-span:focus .input-modal {
+.modal-form__span:hover .input-modal,
+.modal-form__span:focus .input-modal {
   border: 1px solid #2196f3;
 }
 
@@ -356,7 +304,7 @@ img {
   border: 1px solid #2196f3;
 }
 
-.label-modal {
+.modal-form__label {
   position: relative;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -414,6 +362,60 @@ img {
   background-color: var(--button-hover-color);
   border: none;
   box-shadow: none;
+}
+
+.social-address {
+  margin-left: 70px;
+}
+
+.address-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+
+.address-title {
+  color: var(--button-hover-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.address-list__item {
+  width: 44px;
+  height: 44px;
+}
+
+.address-list__item + .address-list__item {
+  margin-left: 10px;
+}
+
+.address-list__link {
+  background-color: #44454e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list__link:hover, .address-list__link:focus {
+  background-color: var(--button-hover-color);
+}
+
+.address-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--button-hover-text-color);
+}
+
+.address-list__link:hover .address-list__icon,
+.address-list__ink:focus .address-list__icon {
+  fill: var(--button-hover-text-color);
 }
 
 .container {
@@ -549,7 +551,7 @@ img {
   align-items: center;
 }
 
-.contacts-list .item + .item {
+.contacts-list__item + .contacts-list__item {
   margin-left: 50px;
 }
 
@@ -895,16 +897,16 @@ img {
   margin-bottom: 50px;
 }
 
-.client-item {
+.client-list__item {
   width: 170px;
   height: 92px;
 }
 
-.client-item + .client-item {
+.client-list__item + .client-list__item {
   margin-left: 30px;
 }
 
-.client-link {
+.client-list__link {
   display: flex;
   width: 100%;
   height: 100%;
@@ -915,21 +917,21 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover, .client-link:focus {
+.client-list__link:hover, .client-list__link:focus {
   border-color: var(--button-hover-color);
 }
 
-.client-icon {
+.client-list__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-icon:focus, .client-icon:hover {
+.client-list__icon:focus, .client-list__icon:hover {
   fill: var(--button-hover-color);
 }
 
-.client-link:hover .client-icon,
-.client-link:focus .client-icon {
+.client-list__link:hover .client-list__icon,
+.client-list__link:focus .client-list__icon {
   border-color: var(--button-hover-color);
   fill: var(--button-hover-color);
 }
@@ -954,7 +956,7 @@ img {
   padding-left: 0px;
 }
 
-.contacts-footer .item + .item {
+.contacts-footer .contacts-list__item + .contacts-list__item {
   margin-top: 9px;
   margin-left: 0px;
 }
@@ -976,57 +978,55 @@ img {
   justify-content: center;
 }
 
-.social-address {
-  margin-left: 70px;
+.contact-form {
+  position: relative;
+  width: 570px;
+  min-height: 86px;
+  margin: 0 auto;
 }
 
-.address-icons {
+.input-form {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  outline: none;
+}
+
+.input-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-left: 0px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--button-hover-color);
+  color: var(--button-hover-text-color);
+  border-radius: 4px;
 }
 
-.address-title {
+.icon-send {
+  display: block;
+  margin-left: 10px;
+  fill: var(--button-hover-text-color);
+}
+
+.text-for-input {
   color: var(--button-hover-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.address-item {
-  width: 44px;
-  height: 44px;
-}
-
-.address-item + .address-item {
-  margin-left: 10px;
-}
-
-.address-link {
-  background-color: #44454e;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover, .address-link:focus {
-  background-color: var(--button-hover-color);
-}
-
-.address-icon {
-  width: 20px;
-  height: 20px;
-  fill: var(--button-hover-text-color);
-}
-
-.address-link:hover .address-icon,
-.address-link:focus .address-icon {
-  fill: var(--button-hover-text-color);
 }
 /*# sourceMappingURL=main.css.map */

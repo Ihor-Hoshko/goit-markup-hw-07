@@ -1,55 +1,9 @@
-.contact-form {
-    position: relative;
-    width: 570px;
-    min-height: 86px;
-    margin: 0 auto;
-  }
-  .input-form {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 4px;
-    background-color: #2f303a;
-    margin-right: 12px;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    padding-left: 16px;
-    outline: none;
-  }
-  .input-button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    background-color: var(--button-hover-color);
-    color: var(--button-hover-text-color);
-    border-radius: 4px;
-  }
-  .icon-send {
-    display: block;
-    margin-left: 10px;
-    fill: var(--button-hover-text-color);
-  }
-  .text-for-input {
-    color: var(--button-hover-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-  }
+
   .modal-form-name {
     margin-bottom: 10px;
     position: relative;
   }
-  .label-modal-span {
+  .modal-form__span {
     position: relative;
     outline: none;
   }
@@ -66,8 +20,8 @@
     &:focus {
     fill: var(--button-hover-color);
   }
-  .label-modal-span:hover &,
-  .label-modal-span:focus & {
+  .modal-form__span:hover &,
+  .modal-form__span:focus & {
     fill: var(--button-hover-color);}
   }
   
@@ -103,8 +57,8 @@
         border: 1px solid #2196f3;
   }
 
-  .label-modal-span:hover &,
-  .label-modal-span:focus & {
+  .modal-form__span:hover &,
+  .modal-form__span:focus & {
     border: 1px solid #2196f3;}
   }
   
@@ -135,7 +89,7 @@
         border: 1px solid #2196f3;}
   }
   
-  .label-modal {
+  .modal-form__label {
     position: relative;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
