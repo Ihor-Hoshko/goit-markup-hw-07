@@ -2,10 +2,14 @@
 @import './base/reset';
 @import './utils/hidden';
 @import './components/button';
+@import './components/social';
+@import './components/logoheader';
+@import './components/logofooter';
+@import './components/modal';
+@import './components/modalform';
 @import './base/container';
 @import './base/section';
 @import './layout/header';
-@import './components/logoheader';
 @import './layout/hero';
 @import './layout/contacts';
 @import './layout/filter';
@@ -13,8 +17,6 @@
 @import './layout/advantage';
 @import './layout/work';
 @import './layout/team';
-@import './components/social';
 @import './layout/client';
 @import './layout/footer';
-@import './components/logofooter';
-@import './layout/modal';
+

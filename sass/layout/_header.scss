@@ -23,6 +23,7 @@
   }
   
   .nav-list .nav-list-link {
+    position: relative;
     display: block;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -55,8 +56,3 @@
     }
   }
   
-  .nav-list-link {
-    position: relative;
-  }
-  
- 
